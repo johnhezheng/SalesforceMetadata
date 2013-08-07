@@ -1,23 +1,14 @@
 package SalesforceMetaData;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.io.IOException;
-import com.sforce.soap.partner.DeleteResult;
 import com.sforce.soap.partner.DescribeGlobalResult;
-import com.sforce.soap.partner.DescribeGlobalSObjectResult;
 import com.sforce.soap.partner.DescribeSObjectResult;
-import com.sforce.soap.partner.Error;
 import com.sforce.soap.partner.Field;
 import com.sforce.soap.partner.FieldType;
-import com.sforce.soap.partner.GetUserInfoResult;
 import com.sforce.soap.partner.PartnerConnection;
-import com.sforce.soap.partner.LoginResult;
 import com.sforce.soap.partner.PicklistEntry;
-import com.sforce.soap.partner.QueryResult;
-import com.sforce.soap.partner.SaveResult;
-import com.sforce.soap.partner.sobject.SObject;
 import com.sforce.ws.ConnectorConfig;
 import com.sforce.ws.ConnectionException;
 
@@ -35,7 +26,6 @@ public class SalesforceMetaDataService {
        
 	public static void main(String[] args) {
         
-    	System.out.println("hello world!");
     	SalesforceMetaDataService sfdcservice = new SalesforceMetaDataService();
     	sfdcservice.run();
         
@@ -224,9 +214,9 @@ public class SalesforceMetaDataService {
     private boolean login() 
     {
         boolean success = false;
-        authEndPoint = "https://cs5.salesforce.com/services/Soap/u/27";
-        String username = "sfdcintegration@dianping.com";
-        String password = "Com38.dianpingqiSL9sPaEBvEMb3w4zEng6yF";
+        authEndPoint = "https://na14.salesforce.com/services/Soap/u/27";
+        String username = "johnhesfdc@gmail.com.test";
+        String password = "hezheng12zkKSNWxp4AZXG6WqKb9YlxqP";
         
         try 
         {
